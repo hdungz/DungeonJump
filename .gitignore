@@ -18,7 +18,7 @@ Release/
 *.opensdf
 *.sdf
 *.ipch
-# *.dll
+*.dll
 *.lib
 *.exp
 *.o
