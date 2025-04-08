@@ -1,0 +1,26 @@
+
+x64/
+Debug/
+Release/
+*.vcxproj
+*.vcxproj.user
+*.vcxproj.filters
+*.suo
+*.ncb
+*.opt
+*.log
+*.ilk
+*.pdb
+*.idb
+*.obj
+*.tlog
+*.lastbuildstate
+*.opensdf
+*.sdf
+*.ipch
+# *.dll
+*.lib
+*.exp
+*.o
+*.ini
+*.svg
