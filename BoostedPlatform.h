@@ -10,4 +10,5 @@ public:
 	double getBoostedSpeed() const { return m_boostedSpeed; }
 private:
 	double m_boostedSpeed;
+	//double highestPlatform;
 };

@@ -197,7 +197,7 @@ void MainGame::render() {
 
 void MainGame::run() {
 
-	highestPlatform = WINDOW_HEIGHT - PADDLING;
+	//highestPlatform = WINDOW_HEIGHT - PADDLING;
 	createPlatformsAndPlayer();
 	backGround = new Sprite(renderer, 0, 0, WINDOW_WIDTH, WINDOW_HEIGHT, "res/gfx/background.png");
 	backGround->loadTex();
