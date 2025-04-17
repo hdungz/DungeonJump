@@ -6,6 +6,7 @@ Là trò chơi 2d platformer, nhiệm vụ của bạn chỉ đơn giản là đ
 
 ## Cách chơi
 
+Chạy file DungeonJump.exe để vào trò chơi 
 Sử dụng phím arrowleft, arrowright để di chuyển nhân vật của mình
 
 ## Screenshot
