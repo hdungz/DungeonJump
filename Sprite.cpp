@@ -10,7 +10,8 @@ Sprite::Sprite(SDL_Renderer* p_renderer, double x, double y, int w, int h, const
 	
 }
 Sprite::~Sprite() {
-	SDL_DestroyRenderer(renderer);
+	//SDL_DestroyRenderer(renderer);
+	//SDL_DestroyTexture(texture);
 }
 
 void Sprite::loadTex() {

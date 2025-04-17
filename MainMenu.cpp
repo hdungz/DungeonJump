@@ -18,7 +18,7 @@ void MainMenu::run() {
 
 void MainMenu::render() {
     SDL_RenderClear(renderer);
-    SDL_RenderCopy(renderer, backGround, NULL, NULL);
+   
     const int TOP_MARGIN = 50;      
     const int TITLE_BUTTON_GAP = 40;
     const float BOB_AMOUNT = 10.0f;  
@@ -47,6 +47,7 @@ void MainMenu::render() {
     SDL_Event event;
     while (isRunning) {
         SDL_Rect titleRect;
+        SDL_RenderClear(renderer);
         while (SDL_PollEvent(&event) != 0) {
             if (event.type == SDL_QUIT) {
                 gameState = GameState::quit;
@@ -75,6 +76,7 @@ void MainMenu::render() {
             }
 
         }
+        SDL_RenderCopy(renderer, backGround, NULL, NULL);
         SDL_RenderCopy(renderer, titleTexture, NULL, &titleRect);
         SDL_RenderCopy(renderer, buttonTexture, NULL, &buttonRect);
         SDL_RenderPresent(renderer);

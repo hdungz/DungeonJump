@@ -16,7 +16,7 @@ int getRandom(int l, int r) {
 
 MainGame::~MainGame() 
 {
-
+	//SDL_DestroyRenderer(renderer);
 }
 void MainGame::createPlatformsAndPlayer() {
 	//platforms.push_back()
@@ -146,7 +146,7 @@ void MainGame::update() {
 	}
 
 	while (platforms.size() > 0 and platforms[0]->getY() > m_player->getY() + SCROLL_THRESHOLD) {
-		 //delete platforms[0];
+		delete platforms[0];
 		platforms.erase(platforms.begin(), platforms.begin() + 1);
 	}
 

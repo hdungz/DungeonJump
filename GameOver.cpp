@@ -61,7 +61,6 @@ void GameOver::render() {
 	SDL_Event event;
 	while (isRunning) {
 		SDL_RenderClear(renderer);
-
 		SDL_Rect desRect = { 0, 0 , WINDOW_WIDTH, WINDOW_HEIGHT };
 		SDL_RenderCopy(renderer, backGround, NULL, &desRect);
 
@@ -87,14 +86,14 @@ void GameOver::render() {
 
 		double currX2 = (float)currX + SPACE * ((float)currW / WINDOW_WIDTH);
 		double currY2 = (float)currY + SPACE * ((float)currH / WINDOW_HEIGHT);
-		double currW2 = (float)currW * (WINDOW_WIDTH - 2.0f * SPACE) / WINDOW_WIDTH;
+		double currW2 = (float)currW * (WINDOW_WIDTH - 2.0 * SPACE) / WINDOW_WIDTH;
 		double currH2 = (float)currH * (100.0 / WINDOW_HEIGHT);
 		SDL_Rect desRect2 = {currX2, currY2, currW2, currH2};
 
 		SDL_Rect desRect3;
-		float startX_center = WINDOW_WIDTH / 2.0f;
-		float startY_center = WINDOW_HEIGHT / 2.0f;
-		float startW_small = 1.0f, startH_small = 1.0f;
+		float startX_center = WINDOW_WIDTH / 2.0;
+		float startY_center = WINDOW_HEIGHT / 2.0;
+		float startW_small = 1.0, startH_small = 1.0;
 		desRect3.x = (int)(startX_center + ((float)finalX3 - startX_center) * progress);
 		desRect3.y = (int)(startY_center + ((float)commonButtonY - startY_center) * progress);
 		desRect3.w = (int)(startW_small + ((float)finalW3 - startW_small) * progress);
